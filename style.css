@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* allgemeine styles */
 
 h1 {
@@ -19,24 +23,19 @@ h2 {
     line-height: 1.3;
 }
 
-p {
-    color: black;
-    font-size: 15px;
-    font-family: "darkmode-on", sans-serif;
-    line-height: 25px;
-    font-weight: 200;
-}
-
-article {
-    color: black;
-    font-size: 15px;
-    line-height: 25px;
-    font-family: "darkmode-on", sans-serif;
-    font-weight: 200;
+hr {
+    width: 100%;
+    border-width: 1px;
+    border-color: #DADADA;
 }
 
 body {
     margin: 0px;
+    font-family: "darkmode-on", sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 25px;
 }
 
 main {
@@ -51,15 +50,19 @@ img {
 
 .h1project1 {
     display: flex;
-    flex-direction: initial;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    margin: 24px;
 }
 
-.h1project1 span {
+.h1project1 figcaption {
     background-color: silver;
     background-color: hsla(0, 0%, 100%, 0.8);
     position: absolute;
+    top: 30%;
+    height: 40%;
     bottom: 0;
     width: 100%;
     line-height: 1em;
@@ -70,8 +73,48 @@ img {
     display: block;
 }
 
+.texth1 {
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-family: "marydale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.3;
+}
 
+/* projekte */
 
+.projects-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    gap: 12px;
+    line-height: 0;
+}
+
+figcaption a {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-family: "marydale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.projects img {
+    width: 100%;
+    max-width: 312px;
+    height: auto;
+}
 
 /* header incl. navigation und logo */
 
@@ -101,33 +144,29 @@ img {
 }
 
 span {
-    color: rgb(197, 113, 126);
+    color: rgb(172, 85, 98);
     font-size: 2em;
     font-family: "marydale", sans-serif;
     padding-left: 0.5em;
 }
 
 .logo {
-    height: 20%;
-    width: 20%;
+    height: 10em;
+    width: auto;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 }
 
-
 nav a {
-    color: rgb(197, 113, 126);
-    font-size: auto;
+    color: rgb(172, 85, 98);
+    font-size: 20px;
     font-family: "marydale", sans-serif;
     font-weight: 400;
     font-style: normal;
-    line-height: 1.3;
     margin-right: 0.6em;
     margin-left: 0.6em;
     text-decoration: none;
 }
-
-
 
 .navaktuell {
     color: rgb(197, 113, 126);
@@ -158,6 +197,54 @@ nav a {
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+}
+
+/* aside */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    padding-top: 60px;
+}
+
+aside figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+aside a {
+    color: rgb(197, 113, 126);
+    font-size: 24px;
+    font-family: "marydale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.3;
+    margin-right: 0.6em;
+    margin-left: 0.6em;
+    padding-top: 24px;
+}
+
+aside p {
+    margin: 0px;
+    font-family: "darkmode-on", sans-serif;
+    color: black;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 24px;
+    max-width: 720px;
+}
+
+aside img {
+    border-radius: 100%;
+    max-width: 260px;
 }
 
 /* footer */
