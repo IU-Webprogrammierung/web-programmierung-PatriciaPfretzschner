@@ -1,3 +1,5 @@
+/* allgemeine styles */
+
 h1 {
     color: #000;
     text-align: center;
@@ -5,7 +7,7 @@ h1 {
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.3;
 }
 
 h2 {
@@ -34,6 +36,19 @@ article {
 body {
     margin: 0px;
 }
+
+main {
+    margin: 24px;
+    padding-bottom: 60px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* header incl. navigation und logo */
 
 .header {
     height: em;
@@ -82,19 +97,7 @@ nav a {
     text-decoration: none;
 }
 
-main {
-    margin: 24px;
-    padding-bottom: 60px;
-}
-
-section {
-    height: auto;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
+/* übersicht inhalte auf startseite */
 
 .inhalte {
     display: flex;
@@ -115,6 +118,8 @@ img {
     text-decoration: none;
 }
 
+/* footer */
+
 footer {
     background: #BE6D75;
     padding-left: 24px;
@@ -134,9 +139,8 @@ footer {
 
 .footersocialmedia {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    
 }
 
 svg {
