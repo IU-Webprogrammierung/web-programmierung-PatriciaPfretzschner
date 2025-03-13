@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 /* allgemeine styles */
 
 h1 {
@@ -36,6 +32,7 @@ body {
     font-size: 15px;
     font-weight: 200;
     line-height: 25px;
+    box-sizing: border-box;
 }
 
 main {
@@ -47,6 +44,339 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* header und hamburger menü mobile */
+
+.logo-mobile {
+    width: 96px;
+    height: 96px;
+}
+
+.header-mobile {
+    background-color: #ffffff ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 1px 1px #DADADA;
+    margin-bottom: 48px;
+}
+
+
+.logostofflab-mobile {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+}
+
+.logostofflab-mobile span {
+    color: rgb(172, 85, 98);
+    font-size: 24px;
+    font-family: "marydale", sans-serif;
+    padding-left: 0.5em;
+    text-decoration: none;
+}
+
+.linie {
+    width: 40px;
+    height: 4px;
+    background-color: rgb(172, 85, 98);
+    border-radius: 2px;
+    position: absolute;
+}
+
+.einsham {
+    top: 10px;
+}
+
+.zweiham {
+    top: 22px;
+}
+
+.dreiham {
+    top: 34px;
+}
+
+.rahmen {
+    width: 40px;
+    height: 48px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.nav-mobile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.ul-nav-mobile {
+    display: none;
+    background-color: #ffffff;
+    list-style-type: none;
+    position: absolute;
+    top: 115px;
+    right: 0px;
+    left: 0px;
+    text-align: end;
+    padding-right: 24px;
+}
+
+.ul-nav-mobile a {
+    color:  rgb(172, 85, 98);
+    font-size: 32px;
+    font-family: "marydale", sans-serif;
+    line-height: 2;
+}
+
+.ul-nav-mobile-style {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+}
+
+.navaktuell-mobile {
+    color: rgb(172, 85, 98);
+    font-size: 32px;
+    font-family: "marydale", sans-serif;
+    line-height: 2;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
+#click:checked~.ul-nav-mobile {
+    display: block;
+}
+
+#click {
+    display: none;
+}
+
+#click:checked~label .zweiham {
+    opacity: 0;
+}
+
+#click:checked~label .einsham {
+    transform: rotate(-40deg);
+    top: 22px;
+    transition: transform 0.5s;
+}
+
+#click:checked~label .dreiham {
+    transform: rotate(40deg);
+    top: 22px;
+    transition: transform 0.5s;
+}
+
+/* header incl. navigation und logo */
+
+.header {
+    display: none;
+}
+
+@media (min-width:1280px){
+    .header-mobile {
+        display: none;
+    }
+
+    .header {
+        display: block;
+        box-shadow: 0px 1px 0px 1px #DADADA;
+        margin-bottom: 48px;
+    }
+    
+    .nav {
+        height: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px;
+    }
+    
+    .nav ul {
+        padding: 0px;
+    }
+    
+    .logostofflab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin: 24px;
+    }
+    
+    span {
+        color: rgb(172, 85, 98);
+        font-size: 2em;
+        font-family: "marydale", sans-serif;
+        padding-left: 0.5em;
+    }
+    
+    .logo {
+        height: 10em;
+        width: auto;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+    
+    nav a {
+        color: rgb(172, 85, 98);
+        font-size: 28px;
+        font-family: "marydale", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-right: 1.3em;
+        margin-left: 1.3em;
+        text-decoration: none;
+    }
+    
+    .navaktuell {
+        color:  rgb(172, 85, 98);
+        font-size: 28px;
+        font-family: "marydale", sans-serif;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}
+
+/* image und content */
+
+.thatsme img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px){
+
+    .imagecontent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thatsme {
+        display: flex;
+        gap: 32px;
+    }
+
+    .thatsme picture {
+        flex: 1;
+    }
+
+    .thatsme article {
+        flex: 1;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1280px){
+
+    .thatsme {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        padding-bottom: 80px;
+    }
+
+    .thatsme picture {
+        flex: 1;
+    }
+
+    .thatsme article {
+        flex: 2;
+        font-size: 18px;
+    }
+}
+
+/* container inhalte */
+
+.leidenschaft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inhalte {
+    display: flex;
+    padding: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 64.5px;
+    border: 2px solid #BE6D75;
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    font-family: "marydale", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+@media (min-width: 768px){
+
+    .inhalte-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .imagecontent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inhalte {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+@media (min-width: 1280px){
+
+    .inhalte-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .inhalte-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        align-self: ;
+        padding-top: 24px;
+    }
+
+    .inhalte:hover {
+        background-color: rgb(172, 85, 98);
+        color:#ffffff
+    }
+
+}
+
+/* project1 */
 
 .h1project1 {
     display: flex;
@@ -88,17 +418,14 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .projects {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding-bottom: 40px;
     gap: 12px;
-    line-height: 0;
+    line-height: 1;
 }
 
 figcaption a {
@@ -108,6 +435,7 @@ figcaption a {
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
+    text-align: center;
 }
 
 .projects img {
@@ -116,88 +444,6 @@ figcaption a {
     height: auto;
 }
 
-/* header incl. navigation und logo */
-
-.header {
-    box-shadow: 0px 1px 1px 1px #DADADA;
-    margin-bottom: 48px;
-}
-
-.nav {
-    height: 4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 24px;
-}
-
-.nav ul {
-    padding: 0px;
-}
-
-.logostofflab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    margin: 24px;
-}
-
-span {
-    color: rgb(172, 85, 98);
-    font-size: 2em;
-    font-family: "marydale", sans-serif;
-    padding-left: 0.5em;
-}
-
-.logo {
-    height: 10em;
-    width: auto;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-}
-
-nav a {
-    color: rgb(172, 85, 98);
-    font-size: 20px;
-    font-family: "marydale", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-right: 0.6em;
-    margin-left: 0.6em;
-    text-decoration: none;
-}
-
-.navaktuell {
-    color: rgb(197, 113, 126);
-    font-size: auto;
-    font-family: "marydale", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: underline;
-}
-
-/* übersicht inhalte auf startseite */
-
-.inhalte {
-    display: flex;
-    padding: 50px 22px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1em;
-    border-radius: 64.5px;
-    border: 2px solid #BE6D75;
-    background: #FFF;
-    color: #000;
-    text-align: center;
-    font-family: "marydale", sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-}
 
 /* aside */
 
@@ -215,7 +461,7 @@ aside figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
 }
 
 aside a {
