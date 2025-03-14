@@ -121,8 +121,8 @@ img {
 .ul-nav-mobile {
     display: none;
     background-color: #ffffff;
-    list-style-type: none;
     position: absolute;
+    z-index: 99;
     top: 115px;
     right: 0px;
     left: 0px;
@@ -135,7 +135,9 @@ img {
     font-size: 32px;
     font-family: "marydale", sans-serif;
     line-height: 2;
+    text-decoration: none;
 }
+
 
 .ul-nav-mobile-style {
     display: flex;
@@ -149,8 +151,8 @@ img {
     font-size: 32px;
     font-family: "marydale", sans-serif;
     line-height: 2;
-    font-weight: 400;
-    text-decoration: underline;
+    font-weight: 600;
+    text-decoration: underline !important;
 }
 
 
@@ -365,7 +367,6 @@ img {
         align-items: center;
         justify-content: center;
         gap: 32px;
-        align-self: ;
         padding-top: 24px;
     }
 

@@ -10,6 +10,34 @@
 </head>
 
 <body>
+    <header class="header-mobile">
+        <a class="logostofflab-mobile" href="index.html" aria-label="Zur Startseite">
+            <img class="logo-mobile" src="images/logo.webp" alt="Logo">
+            <span>StoffLab</span>
+        </a>
+        <nav class="nav-mobile" aria-label="Zur Navigation" alt="Burger Menü">
+            <div class="nav-mobile-container">
+                <input type="checkbox" id="click">
+                <label for="click">
+                    <div class="rahmen">
+                        <div class="linie einsham"></div>
+                        <div class="linie zweiham"></div>
+                        <div class="linie dreiham"></div>
+                    </div>
+                </label>
+                <ul class="ul-nav-mobile">
+                    <ul class="ul-nav-mobile-style">
+                        <li> <a href="index.html" aria-label="Zur 'Startseite'">Startseite</a>
+                        </li>
+                        <li> <a href="about.html" aria-label="Zur 'Wie alles begann' Seite">Wie alles begann</a></li>
+                        <li> <a class="navaktuell-mobile" href="projects.html" aria-label="Zur 'Projekte' Seite">Projekte</a></li>
+                        <li> <a href="#machines.html" aria-label="Zur 'Maschinen' Seite">Maschinen</a></li>
+                        <li> <a href="#links.html" aria-label="Zur 'Links' Seite">Links</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <header class="header">
         <a class="logostofflab" href="index.html" aria-label="Zur Startseite">
             <img class="logo" src="images/logo.webp" alt="Logo">
@@ -19,7 +47,7 @@
             <ul>
                 <a href="index.html">Startseite</a>
                 <a href="about.html">Wie alles begann</a>
-                <a href="projects.html">Projekte</a>
+                <a class="navaktuell" href="projects.html">Projekte</a>
                 <a href="#machines.html">Maschinen</a>
                 <a href="#links.html">Links</a>
             </ul>
