@@ -30,7 +30,8 @@
                         <li> <a href="index.html" aria-label="Zur 'Startseite'">Startseite</a>
                         </li>
                         <li> <a href="about.html" aria-label="Zur 'Wie alles begann' Seite">Wie alles begann</a></li>
-                        <li> <a class="navaktuell-mobile" href="projects.html" aria-label="Zur 'Projekte' Seite" aria-current="page">Projekte</a></li>
+                        <li> <a href="projects.html" aria-label="Zur 'Projekte' Seite" aria-current="page">Projekte</a>
+                        </li>
                         <li> <a href="#machines.html" aria-label="Zur 'Maschinen' Seite">Maschinen</a></li>
                         <li> <a href="#links.html" aria-label="Zur 'Links' Seite">Links</a></li>
                     </ul>
@@ -47,7 +48,7 @@
             <ul>
                 <a href="index.html">Startseite</a>
                 <a href="about.html">Wie alles begann</a>
-                <a class="navaktuell" href="projects.html" aria-current="page">Projekte</a>
+                <a href="projects.html" aria-current="page">Projekte</a>
                 <a href="#machines.html">Maschinen</a>
                 <a href="#links.html">Links</a>
             </ul>
@@ -56,15 +57,19 @@
 
     <main>
         <figure class="h1project1">
-            <img srcset="images_mobil/leo_ideas.webp" type="image/webp"
-                alt="Komposition von einem Leopardenstoff, verschiedenen Bändern, einem Bügelbild und Tüddel in rosa, orange">
-            <figcaption class="textproject1">
-                <h1 class="texth1">Leo Softshellmantel</h1>
-                <p class="textp">28.10.2024</p>
-            </figcaption>
+            <picture>
+                <source media="(max-width: 767px)" srcset="images_mobil/leo_ideas.webp" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="images/leo_ideas.webp" />
+                <img src="images_mobil/leo_ideas.webp"
+                    alt="Komposition von einem Leopardenstoff, verschiedenen Bändern, einem Bügelbild und Tüddel in rosa, orange" />
+                <figcaption class="textproject1">
+                    <h1 class="texth1">Leo Softshellmantel</h1>
+                    <p class="textp">28.10.2024</p>
+                </figcaption>
+            </picture>
         </figure>
 
-        <article>
+        <article class="textproject1">
             <p>In der Welt des Nähens ist es immer etwas Besonderes, ein Kleidungsstück zu erschaffen, das sowohl
                 funktional als auch modisch ist. Heute möchte ich euch mein neuestes Nähprojekt vorstellen – einen
                 Softshellmantel, den ich nach dem Schnittmuster Dunnerkiel von Rabaukowitsch genäht habe. Der Mantel ist
@@ -84,15 +89,16 @@
                 gleichzeitig atmungsaktiv ist –
                 also die perfekte Wahl für wechselhaftes Wetter und kühle Tage.</p>
 
-            <picture>
-                <img src="images/project1_1.webp" width="100%" height="100%"
-                    alt="Katze auf ausgebreitetem Leo Softshell" />
-            </picture>
+            <section>
+                <picture class="img-project1">
+                    <img src="images/project1_1.webp" alt="Katze auf ausgebreitetem Leo Softshell" />
+                </picture>
 
-            <picture>
-                <img src="images/project1_2.webp" width="100%" height="100%"
-                    alt="Katze auf ausgebreitetem Leo Softshell" />
-            </picture>
+                <picture class="img-project1">
+                    <img src="images/project1_2.webp"
+                        alt="Frau in Leo Softshellmantel, die frech die Zunge herausstreckt" />
+                </picture>
+            </section>
 
             <h2>Das Design: Leopardenmuster trifft auf trendige Details</h2>
 
@@ -115,17 +121,15 @@
                 wunderbar in Nähprojekte integrieren lassen. Es zieht nicht nur die Blicke auf sich, sondern gibt dem
                 Mantel auch eine
                 persönliche Note.</p>
+            <section>
+                <picture class="img-project1">
+                    <img src="images/project1_3.webp" alt="Blick auf Kapuze mit Bügelbild" />
+                </picture>
 
-            <picture>
-                <img src="images/project1_3.webp" width="100%" height="100%"
-                    alt="Katze auf ausgebreitetem Leo Softshell" />
-            </picture>
-
-            <picture>
-                <img src="images/project1_5.webp" width="100%" height="100%"
-                    alt="Katze auf ausgebreitetem Leo Softshell" />
-            </picture>
-
+                <picture class="img-project1">
+                    <img src="images/project1_5.webp" alt="Lächelnde Frau in Leo Softshellmantel" />
+                </picture>
+            </section>
             <h2>Der Fertigungsprozess</h2>
 
             <p>Der Schnitt Dunnerkiel ist in seiner Komplexität moderat, was ihn sowohl für Anfänger als auch für
@@ -150,30 +154,28 @@
 
                 Ich freue mich schon darauf, diesen Mantel bei den ersten kühlen Tagen zu tragen – und wer weiß,
                 vielleicht wird er ja zu meinem neuen Lieblingsstück für die Übergangszeit!</p>
+            <section>
+                <picture class="img-project1">
+                    <img src="images/project1_4.webp" alt="Nahaufnahme einer Frau in Leo Softshellmantel" />
+                </picture>
 
-            <picture>
-                <img src="images/project1_4.webp" width="100%" height="100%"
-                    alt="Katze auf ausgebreitetem Leo Softshell" />
-            </picture>
-
-            <picture>
-                <img src="images/project1_6.webp" width="100%" height="100%"
-                    alt="Katze auf ausgebreitetem Leo Softshell" />
-            </picture>
-
+                <picture class="img-project1">
+                    <img src="images/project1_6.webp"
+                        alt="Detailbild des Leo Softshellmantels mit 2 eingenähten Label" />
+                </picture>
+            </section>
         </article>
     </main>
 
     <hr noshade>
-    
+
     <aside>
         <h1>
             Willkommen
         </h1>
         <figure>
             <picture>
-                <img src="images/willkommen.webp"
-                    alt="Frau, die einen Softshellmantel mit Leopardenmuster trägt und lächelt" />
+                <img src="images/willkommen.webp" alt="Lächelnde Frau" />
             </picture>
             <figcaption>
                 <p> Hi, Ich bin Patricia. Schön, dass du hier bist! In meinem Blog teile ich meine liebsten

@@ -59,6 +59,7 @@ main {
 img {
     max-width: 100%;
     height: auto;
+    padding-bottom: 24px;
 }
 
 /* header und hamburger menü mobile */
@@ -429,6 +430,8 @@ img {
 
     .content-image-content {
         display: none;
+        align-items: start;
+        justify-content: flex-start;
     }
 
     .content-image-content-max {
@@ -470,7 +473,7 @@ img {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 24px;
+    margin: 0px;
 }
 
 .h1project1 figcaption {
@@ -485,8 +488,63 @@ img {
     text-align: center;
 }
 
-.h1project1 img {
-    display: block;
+.textproject1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h1project1 picture {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    max-height: 420px;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+
+    .h1project1 picture {
+        max-height: 470px;
+        overflow: hidden;
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+    .h1project1 picture {
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+}
+
+.img-project1 {
+    width: 100%;
+    height: auto;
+    max-width: 312px;
+}
+
+@media (min-width: 768px) {
+
+    article section {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 40px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+    article section {
+        gap: 80px;
+        padding-top: 60px;
+    }
+
 }
 
 .texth1 {
