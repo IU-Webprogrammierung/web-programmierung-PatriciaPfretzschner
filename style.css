@@ -29,10 +29,26 @@ body {
     margin: 0px;
     font-family: "darkmode-on", sans-serif;
     color: black;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 200;
     line-height: 25px;
     box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        font-size: 17px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+    body {
+        font-size: 18px;
+    }
+
 }
 
 main {
@@ -53,7 +69,7 @@ img {
 }
 
 .header-mobile {
-    background-color: #ffffff ;
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -131,7 +147,7 @@ img {
 }
 
 .ul-nav-mobile a {
-    color:  rgb(172, 85, 98);
+    color: rgb(172, 85, 98);
     font-size: 32px;
     font-family: "marydale", sans-serif;
     line-height: 2;
@@ -186,7 +202,7 @@ img {
     display: none;
 }
 
-@media (min-width:1280px){
+@media (min-width:1280px) {
     .header-mobile {
         display: none;
     }
@@ -196,7 +212,7 @@ img {
         box-shadow: 0px 1px 0px 1px #DADADA;
         margin-bottom: 48px;
     }
-    
+
     .nav {
         height: 4em;
         display: flex;
@@ -204,11 +220,11 @@ img {
         align-items: center;
         margin: 24px;
     }
-    
+
     .nav ul {
         padding: 0px;
     }
-    
+
     .logostofflab {
         display: flex;
         justify-content: center;
@@ -216,21 +232,21 @@ img {
         text-decoration: none;
         margin: 24px;
     }
-    
+
     span {
         color: rgb(172, 85, 98);
         font-size: 2em;
         font-family: "marydale", sans-serif;
         padding-left: 0.5em;
     }
-    
+
     .logo {
         height: 10em;
         width: auto;
         padding-top: 1.5em;
         padding-bottom: 1.5em;
     }
-    
+
     nav a {
         color: rgb(172, 85, 98);
         font-size: 28px;
@@ -241,9 +257,9 @@ img {
         margin-left: 1.3em;
         text-decoration: none;
     }
-    
+
     .navaktuell {
-        color:  rgb(172, 85, 98);
+        color: rgb(172, 85, 98);
         font-size: 28px;
         font-family: "marydale", sans-serif;
         font-weight: 600;
@@ -258,7 +274,7 @@ img {
     height: auto;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
     .imagecontent {
         display: flex;
@@ -278,9 +294,10 @@ img {
         flex: 1;
         font-size: 16px;
     }
+
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1280px) {
 
     .thatsme {
         display: flex;
@@ -330,7 +347,7 @@ img {
     text-decoration: none;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
     .inhalte-container {
         display: flex;
@@ -353,9 +370,9 @@ img {
 
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1280px) {
 
-    .inhalte-container{
+    .inhalte-container {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -372,7 +389,75 @@ img {
 
     .inhalte:hover {
         background-color: rgb(172, 85, 98);
-        color:#ffffff
+        color: #ffffff
+    }
+
+}
+
+/* content image content */
+
+.content-image-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-image-content img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    align-self: center;
+}
+
+.content-image-content section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-picture {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.content-image-content-max {
+    display: none;
+}
+
+@media (min-width: 1280px) {
+
+    .content-image-content {
+        display: none;
+    }
+
+    .content-image-content-max {
+        display: unset;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        gap: 32px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .content-image-content-max section {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        gap: 32px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .content-image-content-max picture {
+        flex: 1;
+    }
+
+    .content-image-content-max article {
+        flex: 1;
+        font-size: 18px;
     }
 
 }
@@ -406,7 +491,7 @@ img {
 
 .texth1 {
     color: rgb(0, 0, 0);
-    font-size: 36px;
+    font-size: 2em;
     font-family: "marydale", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -417,16 +502,25 @@ img {
 
 .projects-all {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content:center;
+    margin: 0px;
+    padding: 0px;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
 .projects {
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 40px;
     gap: 12px;
+    width: 100%;
+    max-width: 400px;
     line-height: 1;
+    margin: 0px;;
 }
 
 figcaption a {
@@ -439,10 +533,11 @@ figcaption a {
     text-align: center;
 }
 
-.projects img {
-    width: 100%;
-    max-width: 312px;
-    height: auto;
+
+.flex {
+    display: flex;
+    justify-content: center;
+    
 }
 
 
@@ -521,6 +616,7 @@ footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 32px;
 }
 
 svg {
