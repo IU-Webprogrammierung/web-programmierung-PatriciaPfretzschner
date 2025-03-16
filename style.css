@@ -259,6 +259,17 @@ img {
         text-decoration: none;
     }
 
+    nav a:hover {
+        color: rgb(172, 85, 98);
+        font-size: 28px;
+        font-family: "marydale", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        margin-right: 1.3em;
+        margin-left: 1.3em;
+        text-decoration: none;
+    }
+
     .navaktuell {
         color: rgb(172, 85, 98);
         font-size: 28px;
@@ -463,6 +474,10 @@ img {
         font-size: 18px;
     }
 
+    .content-picture {
+        padding-top: 0px;
+    }
+
 }
 
 /* project1 */
@@ -566,6 +581,7 @@ img {
     margin: 0px;
     padding: 0px;
     gap: 24px;
+    row-gap: 60px;
     flex-wrap: wrap;
 }
 
@@ -573,10 +589,9 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 40px;
-    gap: 12px;
+    padding-top: 0px;
     width: 100%;
-    max-width: 400px;
+    max-width: 312px;
     line-height: 1;
     margin: 0px;;
 }
@@ -591,11 +606,26 @@ figcaption a {
     text-align: center;
 }
 
+@media (min-width: 1280px) {
 
-.flex {
+    .projects:hover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 312px;
+        line-height: 1;
+        margin: 0px;
+        background-color: rgb(210, 148, 157);
+    }
+
+}
+
+
+.flex img {
     display: flex;
     justify-content: center;
-    
+    padding-bottom: 0px !important;
 }
 
 
@@ -628,6 +658,19 @@ aside a {
     margin-right: 0.6em;
     margin-left: 0.6em;
     padding-top: 24px;
+}
+
+aside a:hover {
+    color: rgb(197, 113, 126);
+    font-size: 24px;
+    font-family: "marydale", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.3;
+    margin-right: 0.6em;
+    margin-left: 0.6em;
+    padding-top: 24px;
+    text-decoration: none;
 }
 
 aside p {
