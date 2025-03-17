@@ -781,3 +781,18 @@ footer a {
     line-height: normal;
     text-decoration: none;
 }
+
+@media (min-width: 1280px) {
+
+    footer a:hover {
+        color: #ffffff;
+        text-align: center;
+        font-family: Marydale;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+    }
+
+}
