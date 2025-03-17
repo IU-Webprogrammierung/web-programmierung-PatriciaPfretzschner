@@ -11,7 +11,9 @@ h1 {
 }
 
 p {
-    margin: 0rem;
+    display:block; 
+    margin-block-start: 0rem;
+    padding-top: 1.5rem;
 }
 
 h2 {
@@ -206,6 +208,11 @@ img {
 
 .header {
     display: none;
+}
+
+.thatsme p {
+    margin: 0rem;
+    padding: 0rem;
 }
 
 @media (min-width:1280px) {
