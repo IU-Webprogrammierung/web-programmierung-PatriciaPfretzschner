@@ -16,7 +16,7 @@ article {
 }
 
 p {
-    display:block; 
+    display: block;
     margin-block-start: 0rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -51,7 +51,8 @@ body {
 
 img {
     box-shadow: 10px 10px 15px silver;
-    }
+    border-radius: 0.2rem;
+}
 
 @media (min-width: 768px) {
 
@@ -373,7 +374,7 @@ img {
     align-items: center;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
-    border: 0.125rem solid #BE6D75;
+    border: 0.01rem solid #BE6D75;
     background: #FFF;
     color: #000;
     text-align: center;
@@ -383,6 +384,7 @@ img {
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 768px) {
@@ -565,7 +567,7 @@ img {
     }
 
     .textproject1-1 {
-max-width: 70rem;
+        max-width: 70rem;
     }
 
     .project1-flex {
@@ -581,6 +583,7 @@ max-width: 70rem;
 .img-project1 {
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
 .img-project1 img {
@@ -768,9 +771,9 @@ aside p {
     margin: 0px;
     font-family: "darkmode-on", sans-serif;
     color: black;
-    font-size: 0.93rem;
+    font-size: 1rem;
     line-height: 1.56rem;
-    font-weight: 900;
+    font-weight: 400;
     text-align: center;
     padding-top: 1.5rem;
     max-width: 45rem;
@@ -861,9 +864,9 @@ footer a {
     align-items: center;
     z-index: 1000;
     transition: opacity 0.3s ease;
-  }
-  
-  .cookie-popup-content {
+}
+
+.cookie-popup-content {
     background-color: #fff;
     color: #333;
     padding: 3rem;
@@ -873,16 +876,16 @@ footer a {
     width: 90%;
     max-width: 45rem;
     box-sizing: border-box;
-  }
+}
 
-  .cookie-popup-content img {
+.cookie-popup-content img {
     background-color: #fff;
     box-shadow: none;
     text-align: center;
     max-width: 8rem;
-  }
+}
 
-  .cookie-popup button {
+.cookie-popup button {
     background-color: #BE6D75;
     color: white;
     border: none;
@@ -893,17 +896,96 @@ footer a {
     font-size: 1rem;
     width: 10rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    z-index: 1;
-  }
+}
 
-  .cookie-popup button:hover {
+.cookie-popup button:hover {
     background-color: #BE6D75;
     transform: scale(1.1);
-  }
-  
-  .cookie-popup.hidden {
+}
+
+.cookie-popup.hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-  }
-  
+}
+
+/* newsletter */
+
+.newsletter-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    box-shadow: 10px 10px 15px silver;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-image: repeating-linear-gradient(-45deg,
+            #f1f1f1,
+            #f1f1f1 5px,
+            #f3c8cd 5px,
+            #f3c8cd 20px)
+}
+
+.newsletter-box h1 {
+    margin-bottom: 1.25rem;
+    font-weight: 00;
+    color: #000000;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    width: 100%;
+    border-radius: 0.3125rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+
+.newsletter-box input {
+    font-family: "darkmode-on", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #c6b4b4;
+    border-radius: 0.3125rem;
+    box-sizing: border-box;
+}
+
+.newsletter-box button {
+    font-family: "marydale", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 50%;
+    padding: 0.75rem;
+    background-color: #ffffff;
+    border: none;
+    color: #BE6D75;
+    border-radius: 0.3125rem;
+    border: 1px solid #c6b4b4;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.newsletter-box button:hover {
+    color: #ffffff;
+    background-color: #BE6D75;
+}
+
+#successMessage {
+    color: #000000;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 1280px) {
+    .newsletter-box {
+        width: 100%;
+    }
+}

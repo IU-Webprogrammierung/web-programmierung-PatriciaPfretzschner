@@ -29,8 +29,8 @@
                     <ul class="ul-nav-mobile-style">
                         <li> <a href="index.html" aria-label="Zur 'Startseite'">Startseite</a>
                         </li>
-                        <li> <a class="navaktuell-mobile" href="about.html"
-                                aria-label="Zur 'Wie alles begann' Seite" aria-current="page">Wie alles begann</a></li>
+                        <li> <a class="navaktuell-mobile" href="about.html" aria-label="Zur 'Wie alles begann' Seite"
+                                aria-current="page">Wie alles begann</a></li>
                         <li> <a href="projects.html" aria-label="Zur 'Projekte' Seite">Projekte</a></li>
                         <li> <a href="#machines.html" aria-label="Zur 'Maschinen' Seite">Maschinen</a></li>
                         <li> <a href="#links.html" aria-label="Zur 'Links' Seite">Links</a></li>
@@ -168,6 +168,19 @@
                 </picture>
             </section>
         </section>
+
+        <div class="newsletter-box">
+            <h1>Newsletter abonnieren</h1>
+            <form id="newsletterForm">
+                <input type="text" id="name" name="name" placeholder="Name" aria-label="Gib hier deinen Namen ein"
+                    required>
+                <input type="email" id="email" name="email" placeholder="E-Mail-Adresse"
+                    aria-label="Gib hier deine E-Mail-Adresse ein" required>
+                <button type="submit" aria-label="Abonnieren des Newsletters">Abonnieren</button>
+                <p id="successMessage" class="hidden" aria-live="assertive">Danke fürs Abonnieren! 🎉</p>
+            </form>
+        </div>
+
     </main>
 
     <footer class="footer">
@@ -224,6 +237,8 @@
             </ul>
         </nav>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 

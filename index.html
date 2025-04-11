@@ -106,6 +106,19 @@
                 </div>
             </section>
         </section>
+
+        <div class="newsletter-box">
+            <h1>Newsletter abonnieren</h1>
+            <form id="newsletterForm">
+                <input type="text" id="name" name="name" placeholder="Name" aria-label="Gib hier deinen Namen ein"
+                    required>
+                <input type="email" id="email" name="email" placeholder="E-Mail-Adresse"
+                    aria-label="Gib hier deine E-Mail-Adresse ein" required>
+                <button type="submit" aria-label="Abonnieren des Newsletters">Abonnieren</button>
+                <p id="successMessage" class="hidden" aria-live="assertive">Danke fürs Abonnieren! 🎉</p>
+            </form>
+        </div>
+
     </main>
 
     <footer class="footer">
@@ -166,7 +179,8 @@
     <div class="cookie-popup hidden" id="cookiePopup">
         <div class="cookie-popup-content">
             <img src="images/logo.webp" alt="Logo der Website">
-            <p>Diese Website verwendet Cookies, um dir das beste Erlebnis zu bieten. Cookies schmecken lecker! Viel Spaß.</p>
+            <p>Diese Website verwendet Cookies, um dir das beste Erlebnis zu bieten. Cookies schmecken lecker! Viel
+                Spaß.</p>
             <button id="acceptCookies">Einverstanden</button>
         </div>
     </div>
