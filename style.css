@@ -282,7 +282,6 @@ img {
         color: rgb(172, 85, 98);
         font-size: 2rem;
         font-family: "marydale", sans-serif;
-        padding-left: 0.5rem;
     }
 
     .logo {
@@ -291,6 +290,7 @@ img {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         box-shadow: none;
+        padding-right: 0.7rem;
     }
 
     nav a {
@@ -1014,3 +1014,70 @@ footer a {
         width: 100%;
     }
 }
+
+/* Accordion */
+
+.faq-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
+    font-family: "darkmode-on", sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 1280px) {
+
+    .faq-section {
+        max-width: 75%;
+    }
+}
+
+  .accordion-button {
+    width: 100%;
+    background: none;
+    border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding left: 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-top: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion-title {
+    font-family: "darkmode-on", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #000;
+    text-align: left;
+  }
+  
+  .accordion-button:hover,
+  .accordion-button:focus {
+    background-color: #f7f7f7;
+    outline: none;
+  }
+  
+  .accordion-icon {
+    transition: transform 0.3s ease;
+    font-size: 1.5rem;
+    color: #000;
+  }
+  
+  .accordion-button[aria-expanded="true"] .accordion-icon {
+    transform: rotate(90deg); /* Pfeil zeigt nach unten */
+  }
+  
+  .accordion-panel {
+    padding: 0 1rem 1rem 1rem;
+    font-family: "darkmode-on", sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+  }
