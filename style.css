@@ -501,8 +501,9 @@ img {
     }
 
     .content-image-content-max article {
-        flex: 1;
+        flex: 2;
         font-size: 1.13rem;
+        column-count: 2;
     }
 
     .content-picture {
