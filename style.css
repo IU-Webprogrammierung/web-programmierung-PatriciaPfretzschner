@@ -947,6 +947,7 @@ footer a {
     text-align: center;
     max-width: 100%;
     box-sizing: border-box;
+    border: 0.01rem solid #BE6D75;
     background-image: repeating-linear-gradient(-45deg,
             #f1f1f1,
             #f1f1f1 5px,
@@ -1026,6 +1027,7 @@ footer a {
     font-family: "darkmode-on", sans-serif;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    border: 0.01rem solid #BE6D75;
   }
 
   @media (min-width: 1280px) {
@@ -1041,7 +1043,7 @@ footer a {
     border: none;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding left: 0rem;
+    padding-left: 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
