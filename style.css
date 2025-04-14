@@ -30,7 +30,7 @@ article p {
 }
 
 .textlink {
-    color: #BE6D75;
+    color: rgb(172, 85, 98);
     font-weight: bold;
 }
 
@@ -70,6 +70,9 @@ body {
 img {
     box-shadow: 10px 10px 15px silver;
     border-radius: 0.2rem;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 0rem;
 }
 
 @media (min-width: 768px) {
@@ -94,11 +97,6 @@ main {
     padding-bottom: 3.75rem;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 0rem;
-}
 
 /* header und hamburger menü mobile */
 
@@ -245,6 +243,11 @@ img {
 .thatsme p {
     margin: 0rem;
     padding: 0rem;
+}
+
+.thatsme img {
+    width: 100%;
+    height: 100%;
 }
 
 @media (min-width:1280px) {
@@ -1019,12 +1022,11 @@ footer a {
 /* Accordion */
 
 .faq-section {
-    background-color: #ffffff;
+    background-color: #fff7f7;
     padding: 2rem;
     margin: 0 auto;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
-    font-family: "darkmode-on", sans-serif;
     margin-top: 3rem;
     margin-bottom: 3rem;
     border: 0.01rem solid #BE6D75;
@@ -1054,16 +1056,22 @@ footer a {
 
   .accordion-title {
     font-family: "darkmode-on", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1rem;
     color: #000;
     text-align: left;
+    padding-right: 1rem;
   }
   
   .accordion-button:hover,
   .accordion-button:focus {
-    background-color: #f7f7f7;
     outline: none;
+  }
+
+  .accordion-button:focus {
+    outline: 2px solid  #ff56c1; /* gut sichtbare Farbe */
+    outline-offset: 0.2rem;
+    background-color: #f0f8ff;
   }
   
   .accordion-icon {

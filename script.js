@@ -28,25 +28,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll('.accordion-button');
-  
+
     buttons.forEach((button) => {
-      button.addEventListener('click', () => {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-        const panelId = button.getAttribute('aria-controls');
-        const panel = document.getElementById(panelId);
-  
-        // Toggle Zustand
-        button.setAttribute('aria-expanded', !expanded);
-        panel.hidden = expanded;
-      });
-  
-      // Optional: Tastatursteuerung mit Enter/Leertaste
-      button.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          button.click();
-        }
-      });
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            const panelId = button.getAttribute('aria-controls');
+            const panel = document.getElementById(panelId);
+
+            // Toggle Zustand
+            button.setAttribute('aria-expanded', !expanded);
+            panel.hidden = expanded;
+        });
+
+        // Optional: Tastatursteuerung mit Enter/Leertaste
+        button.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                button.click();
+            }
+        });
     });
-  });
-  
+});
+
+
