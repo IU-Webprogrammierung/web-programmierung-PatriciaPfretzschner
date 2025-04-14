@@ -203,9 +203,11 @@
         <div class="newsletter-box">
             <h1>Newsletter abonnieren</h1>
             <form id="newsletterForm">
-                <input type="text" id="name" name="name" placeholder="Name" aria-label="Gib hier deinen Namen ein"
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" aria-label="Gib hier deinen Namen ein"
                     required>
-                <input type="email" id="email" name="email" placeholder="E-Mail-Adresse"
+                    <label for="email">E-Mail Adresse</label>
+                <input type="email" id="email" name="email"
                     aria-label="Gib hier deine E-Mail-Adresse ein" required>
                 <button type="submit" aria-label="Abonnieren des Newsletters">Abonnieren</button>
                 <p id="successMessage" class="hidden" aria-live="assertive">Danke fürs Abonnieren! 🎉</p>
