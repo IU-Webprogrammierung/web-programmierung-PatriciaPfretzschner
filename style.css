@@ -950,7 +950,7 @@ footer a {
     text-align: center;
     font-size: 1.1rem;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     max-width: 100%;
     box-sizing: border-box;
     border: 0.01rem solid #BE6D75;
