@@ -70,7 +70,7 @@ body {
 img {
     box-shadow: 10px 10px 15px silver;
     border-radius: 0.2rem;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     padding-bottom: 0rem;
 }
@@ -1030,16 +1030,16 @@ footer a {
     margin-top: 3rem;
     margin-bottom: 3rem;
     border: 0.01rem solid #BE6D75;
-  }
+}
 
-  @media (min-width: 1280px) {
+@media (min-width: 1280px) {
 
     .faq-section {
         max-width: 75%;
     }
 }
 
-  .accordion-button {
+.accordion-button {
     width: 100%;
     background: none;
     border: none;
@@ -1052,42 +1052,43 @@ footer a {
     cursor: pointer;
     border-top: 1px solid #ddd;
     transition: background-color 0.3s ease;
-  }
+}
 
-  .accordion-title {
+.accordion-title {
     font-family: "darkmode-on", sans-serif;
     font-weight: 500;
     font-size: 1rem;
     color: #000;
     text-align: left;
     padding-right: 1rem;
-  }
-  
-  .accordion-button:hover,
-  .accordion-button:focus {
-    outline: none;
-  }
+}
 
-  .accordion-button:focus {
-    outline: 2px solid  #ff56c1; /* gut sichtbare Farbe */
+.accordion-button:hover,
+.accordion-button:focus {
+    outline: none;
+}
+
+.accordion-button:focus-visible {
+    outline: 2px solid #ff56c1;
     outline-offset: 0.2rem;
     background-color: #f0f8ff;
-  }
-  
-  .accordion-icon {
+}
+
+.accordion-icon {
     transition: transform 0.3s ease;
     font-size: 1.5rem;
     color: #000;
-  }
-  
-  .accordion-button[aria-expanded="true"] .accordion-icon {
-    transform: rotate(90deg); /* Pfeil zeigt nach unten */
-  }
-  
-  .accordion-panel {
+}
+
+.accordion-button[aria-expanded="true"] .accordion-icon {
+    transform: rotate(90deg);
+    /* Pfeil zeigt nach unten */
+}
+
+.accordion-panel {
     padding: 0 1rem 1rem 1rem;
     font-family: "darkmode-on", sans-serif;
     font-size: 1rem;
     font-style: italic;
     line-height: 1.5;
-  }
+}
